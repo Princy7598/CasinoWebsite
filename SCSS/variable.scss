@@ -1,0 +1,62 @@
+// ========================================================================
+
+// Variables
+// ========================================================================
+
+//
+// Colors
+//
+
+//_variables.scss
+
+$global-font-family: 'Inter', sans-serif;
+$global-font-size:0.875rem;
+$font-size-small:1.375rem; //22px
+$font-size-large:3.125rem; //50px
+$global-line-height:1.5;
+
+$global-font-weight: 400;
+
+//colors
+$white:    #fff !default;         // White 
+$secondary: #eeeeee !default;     // Secondary  gray-600
+$light:  #f5f5f5 !default;        // Light gray-100
+$primary : #2196f3 !default;      //Primary
+$dark : #212529 !default;        //black gray-800
+$black : #0000001a !default;
+$gray-200 : #f8f9fa !default;
+$danger : #dc3545 !default;
+$success : #28a745 !default;
+$warning: #E4AF07 !default;
+
+
+
+$global-color: #666 !default;
+$global-emphasis-color: #333 !default;
+$global-muted-color: #999 !default;
+$blue-muted-color:#E0EAFC;
+$global-active-color: #1e87f0 !default;
+$global-link-color: #2196f3 !default;
+$global-link-hover-color: #0f6ecd !default;
+$global-alert-success-color :#56e605 !default;
+
+$btn-background: #3699ff;  /* fallback for old browsers */
+$btn-background: -webkit-linear-gradient(to right, #3699ff, #2F80ED, );  /* Chrome 10-25, Safari 5.1-6 */
+$btn-gradient-background: linear-gradient(to right, #3699ff, #2F80ED, ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+$global-inverse-color: #fff !default;
+$theme-colors: ();
+
+$theme-colors: map-merge(
+  (
+    "primary":    $primary,
+    "secondary":  $secondary,
+    "light":      $light,
+    "dark":       $dark
+  ),
+  $theme-colors
+);
+
+
+

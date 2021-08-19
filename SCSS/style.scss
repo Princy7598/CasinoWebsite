@@ -1,0 +1,512 @@
+@import "../SCSS/variable";
+@import "../SCSS/mixin";
+
+
+$homepage-bg-color : #0D1023;
+$game-card-bg-color:#232846;
+$game-card-bg-color-md:#151a38;
+$game-card-bg-color-dark: #0d122f;
+
+.casino-homepage {
+    overflow-x: hidden;
+    font-family: $global-font-family;
+
+.hero-section {
+    background-image: url("/images/hero_image.png");
+    height:50rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100vw;
+
+    .navbar {
+        height:5rem;
+
+        li {
+            padding-left: 1.3rem;
+            font-size: $global-font-size;
+            font-style: italic;
+
+            a {
+                color:$white;
+                text-transform: uppercase;
+                font-style: italic;
+
+                &:hover{
+                    color: $warning;
+                }
+            }
+            
+            .navbar-collapse {
+                background-color: none;
+            }
+
+            .cta-btn {
+                text-transform: uppercase;
+                border:1px solid $warning;
+                background: none;
+                color:$white;
+                padding:0.5rem;
+                padding-left: 1rem;
+                padding-right: 1rem;
+                font-style: italic;
+
+                &:hover {
+                    background: $warning;
+                    color:$white;
+                }
+            }
+        }
+
+    }
+
+    .hero-content {
+        height:  calc(50rem - 5rem);
+        position: relative;
+        display: flex;
+        align-items: center;
+
+        .hero-content-left {
+          max-width: 27rem;
+          margin-left:4rem;
+
+        h5 {
+            color: $warning;
+            font-style: italic;
+            font-size: $font-size-small;
+            text-shadow: 2px 4px 3px rgb(11,16,37);
+        }
+        h1 {
+            color:$white;
+            font-style: italic;
+            font-size: $font-size-large;
+            text-shadow: -2px 7px 0 rgba(0,0,0,0.3);
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            line-height: $global-line-height;
+        }
+        p {
+            color:$blue-muted-color;
+            font-style: italic;
+            font-size: $global-font-size;
+            line-height: $global-line-height;
+            padding-bottom:0.8rem;
+        }
+        .cta-hero-btn {
+            background: $btn-gradient-background;
+            background-color: $btn-background;
+            border:none;
+            font-style: italic;
+            color: $white;
+            padding:0.5rem 1.5rem;
+            @include border-radius(2%);
+            font-size: $global-font-size;
+
+            i {
+                margin-left:7px;
+            }
+        }
+    }
+    }
+ }
+
+    .game-list-section {
+        background: $homepage-bg-color;
+
+         .game-counting-card-section {
+            display: flex;
+            position: relative;
+            left:50%;
+            transform: translateX(-50%);
+         
+        .game-card1 {
+            padding:2rem;
+            opacity:0.9;
+            text-align: center;
+            background-color: $game-card-bg-color;
+            @include border-radius(10px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+
+            .counting-numbers {
+                display: flex;
+                margin-left:5.5rem;
+
+                .count-box {
+                    width:2.5rem;
+                    height:2.5rem;
+                    text-align: center;
+                    background-color: $primary;
+                    @include border-radius(5px);
+                    font-weight: 600;
+                    color:$white;
+                    font-size: 20px;
+                    padding-top:5px;
+                    margin-right:0.3rem;
+                }
+
+                .margin-right {
+                    margin-left:1rem;
+                }
+            }
+
+            h4 {
+                color:$blue-muted-color;
+                font-style: italic;
+                text-transform: uppercase;
+                text-shadow: -2px 4px 0 rgba(0,0,0,0.3);
+            }
+
+            h5{
+                color:$warning;
+                font-style: italic;
+                text-transform: uppercase;
+                padding-bottom :2rem;
+                text-shadow: -2px 4px 0 rgba(0,0,0,0.3);
+
+                i {
+
+                    color:$white; 
+                    margin-left: 1rem;
+                    margin-right:1rem;
+                }
+            }
+
+            h6 {
+                font-size: 19px;
+                color:$blue-muted-color;
+                padding-top:2rem;
+                font-weight: lighter;
+                font-style: italic;
+                text-transform: uppercase;
+            }
+        }
+
+        .game-card2 {
+            //width:30rem;
+            background-image: url("../images/phone.jfif");
+            background-size: cover;
+            padding:2rem;
+            opacity:0.9;
+            text-align: start;
+            background-color: $game-card-bg-color;
+            @include border-radius(10px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+        
+            h5 {
+                color:$white;
+                font-style: italic;
+                text-transform: uppercase;
+                padding-bottom: 0.5rem;
+            }
+
+            h3 {
+                color:$warning;
+                font-style: italic;
+                text-transform: uppercase;
+                font-weight: 600;
+                text-shadow: -2px 4px 0 rgba(0,0,0,0.3);
+                padding-bottom: 0.5rem;
+            }
+
+            button {
+                border:1px solid $white;
+                padding:0.5rem 1rem;
+                background-color:transparent;
+                color:$white;
+                font-weight: 400;
+                @include border-radius(10px);
+
+                i {
+                    margin-right:0.6rem;
+                }
+            }
+        }
+      }
+
+      .game-providers-card {
+          //display: flex;
+          margin-top: 4rem;
+          margin-bottom: 4rem;
+
+          .box {
+              background-color: $game-card-bg-color;
+              padding:1.5rem 0.6rem;
+              color:$blue-muted-color;
+              text-align: center;
+              box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.2);
+          }
+          .arrowBox{
+            position: relative;
+            font-size: $global-font-size;
+            padding:1.5rem 0.6rem;
+            //width:220px;
+            background:$game-card-bg-color;
+            // height:40px;
+            // line-height: 40px;
+            // margin-bottom:30px; 
+            text-align:center;
+            color:$blue-muted-color;
+          }
+
+          .arrow-right:after{
+            content: "";
+            position: absolute;
+            right: -20px;
+            top: 0;
+            border-top: 36px solid transparent;
+            border-bottom: 34px solid transparent;
+            border-left: 22px solid $game-card-bg-color; 
+        }
+      }
+
+      .top-games {
+          margin-top:4rem;
+
+          .top-games-header {
+              text-align: center;
+              text-transform: uppercase;
+              font-style: italic;
+              font-size: $font-size-small;
+              color:$white;
+              font-weight: 600;
+              background-color: $game-card-bg-color;
+              padding:1rem 0rem;
+
+              i {
+                  color:$warning;
+                  margin-right:0.5rem;
+              }
+          }
+
+          .top-games-body {
+              background-color: $game-card-bg-color-md;
+              padding:2rem;
+
+              .card {
+                  background-color: transparent;
+                  border:none;
+
+                  img {
+                      height:10rem;
+                  }
+
+                  h5 {
+                      color:$white;
+                      font-style: italic;
+                      font-size: $global-font-size;
+                  }
+
+                  p {
+                      font-size: 13px;
+                      font-style: italic;
+                      color:$blue-muted-color;
+                  }
+              }
+          }
+
+          .top-games-footer {
+              background-color: $game-card-bg-color-dark;
+              padding:1rem 0rem;
+              color: $blue-muted-color;
+              font-size: $global-font-size;
+              text-align: center;
+              font-style: italic;
+
+              i {
+                  margin-right: 1rem;
+              }
+          }
+      }
+    }
+
+    .cta-banner {
+        background-image: url("../images//banner_image.png");
+        height:50rem;
+        background-size: cover;
+
+        .banner-content {
+           
+            position:relative;
+            top:50%;
+            left:50%;
+            transform: translate(-50%, -50%);
+        
+        .banner-content-center { 
+           text-align: center;
+           
+          h5 {
+              color: $warning;
+              font-style: italic;
+              font-size: $font-size-small;
+              text-shadow: 2px 4px 3px rgb(11,16,37);
+          }
+          h1 {
+              color:$white;
+              font-style: italic;
+              font-size: $font-size-large;
+              text-shadow: -2px 7px 0 rgba(0,0,0,0.3);
+              padding-top: 1rem;
+              padding-bottom: 1rem;
+              line-height: $global-line-height;
+          }
+          p {
+              color:$blue-muted-color;
+              font-style: italic;
+              font-size: $global-font-size;
+              line-height: $global-line-height;
+              padding-bottom:0.8rem;
+          }
+          .cta-hero-btn {
+              background: $btn-gradient-background;
+              background-color: $btn-background;
+              border:none;
+              font-style: italic;
+              color: $white;
+              padding:0.5rem 1.5rem;
+              @include border-radius(2%);
+              font-size: $global-font-size;
+  
+              i {
+                  margin-left:7px;
+              }
+          }
+      }
+    }
+    }
+
+    .casino-footer {
+        background-color: $game-card-bg-color-md;
+        padding:4rem 4rem;
+
+        .column {
+            border-right:1px solid $game-card-bg-color;
+        }
+
+        p {
+            color:$blue-muted-color;
+            font-size: $global-font-size;
+            font-style: italic;
+            font-weight: normal;
+            margin-top:2rem;
+        }
+
+        small {
+            color:$blue-muted-color;
+            font-style: italic;
+        }
+
+        ul li {
+            color:$blue-muted-color;
+            font-size: $global-font-size;
+            font-style: italic;
+            font-weight: normal;
+            line-height:2.5; 
+            left:1rem;
+            position: relative;
+        }
+        .form-control {
+            background-color: $game-card-bg-color-dark;
+            font-style: italic;
+            box-shadow: none;
+            border: none;
+            
+        }
+        .input-group-text {
+            background-color: $primary;
+            color:$white;
+            box-shadow: none;
+            border: none;
+        }
+    }
+ 
+}
+
+@media (min-width: 1400px) {
+.container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: 102.5rem;
+ }
+}
+
+@media (min-width:320px) {
+    .navbar-collapse {
+        background-color: $game-card-bg-color;
+        color:$white;
+        z-index: 1;
+    }
+
+    .hero-content {
+        .hero-content-left {
+            max-width: 35rem;
+            margin-left:0rem;
+    
+        }
+    }
+}    
+    
+
+@media (min-width: 360px) and (max-width: 410px) {
+    .navbar-collapse {
+        background-color: $game-card-bg-color;
+        color:$white;
+        z-index: 1;
+    }
+
+    .game-list-section {
+        .game-counting-card-section {
+            .game-card1 {
+                margin-bottom:2rem;
+
+                h5 {
+                    i {
+                        display: none;
+                        margin-left: 0rem;
+                        margin-right:0rem; 
+                    }
+                }
+            }
+        }
+    }
+
+    .casino-footer {
+        .column {
+            border-right:none;
+        }
+    
+    }
+    
+}
+
+@media (min-width: 411px) and (max-width: 767px) {
+    .game-list-section {
+        .game-counting-card-section {
+            .game-card1 {
+                margin-bottom:2rem;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 920px) {
+    .game-list-section {
+        .game-counting-card-section {
+            .game-card1 {
+                margin-bottom:2rem;
+
+                .counting-numbers {
+                    margin-left:5.5rem;
+                }
+                
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1400px) {
+.navbar-toggler-icon {
+    display : block;
+
+}
+
+ .navbar-collapse {
+    background-color: none;
+}
+}

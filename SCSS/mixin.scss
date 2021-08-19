@@ -1,0 +1,17 @@
+@import "./variable";
+
+@mixin border-radius($radius) {
+  border-radius: $radius;
+}
+@mixin text-decoration(){
+  text-decoration: none;
+}
+@mixin list-style-type(){
+  list-style-type: none;
+}
+@mixin flex-align(){
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
